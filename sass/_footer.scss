@@ -1,0 +1,75 @@
+@import "ini/function";
+@import "setting/setting_pak";
+footer{
+	padding:60px 0;
+	background:#666;
+	color:#fff;
+	div.dp__flex{
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	.cpy h3{
+		margin:0 0 20px;
+	}
+	.cpy dl{
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.cpy dd ul{
+		justify-content: flex-start;
+		gap: 0 10px;
+	}
+	.cpy dd ul li{
+		width:40px;
+		box-sizing: border-box;
+		background:#333;
+		border-radius: 10px;
+	}
+	.cpy dd ul li a{
+		padding:10px;
+		display:block;
+		height:100%;
+		width:100%;
+		box-sizing: border-box;
+	}
+	.cpy dd ul li img{
+		width:100%;
+		height:100%;
+		object-fit: contain;
+	}
+	.snav ul{
+		justify-content: flex-end;
+		align-items: center;
+		gap:0 20px;
+		margin:0 0 10px;
+	}
+	.snav p{
+		text-align: right;
+	}
+	@include sp{
+		padding:40px 10px 80px;
+		div.dp__flex{
+			display:block;
+		}
+		.cpy{
+			margin:0 0 40px;
+		}
+		.cpy dd ul{
+			gap: 0 5px;
+		}
+		.cpy dd ul li{
+			width:30px;
+		}
+		.cpy dd ul li a{
+			padding:5px;
+		}
+		.snav ul{
+			justify-content: center;
+			align-items: center;
+			margin:0 0 40px;
+		}
+		.snav p{
+			text-align: center;
+		}
+	}
+}

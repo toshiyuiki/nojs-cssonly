@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<!--default-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>No.js - CSS only site</title>
+
+	<!--css-->
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!--font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kosugi&amp;family=Roboto&amp;display=swap" rel="stylesheet">
+
+</head>
+
+<body id="index">
+
+<header>
+	<div class="dp__flex">
+		<h1 class="fs__txt__en__40">No.js</h1>
+		<nav aria-label="メインメニュー" class="fw__bold dp__flex">
+			<ul class="dp__flex fs__txt__en__16">
+				<li><a href="#news">NEWS</a></li>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#access">ACCESS</a></li>
+				<li><a href="#faq">FAQ</a></li>
+			</ul>
+			<p class="cv"><a href="#contact">CONTACT</a></p>
+			<details class="dp__block__sp">
+				<summary><span>MENU</span></summary>
+			</details>
+		</nav>
+	</div>
+</header>
+
+<main>
+	<div id="main">
+
+		<section class="sec01">
+			<div class="slider">
+				<div class="view">
+					<div class="angle">
+						<div class="scroll">
+							<ul class="list dp__flex">
+								<li class="slide" id="slide_1">
+									<a class="next" href="#slide_2">＞</a>
+									<a class="prev" href="#slide_4">＜</a>
+									<img src="./images/index/slide01.jpg" alt="" width="1500" height="600" decoding="async">
+								</li>
+								<li class="slide" id="slide_2">
+									<a class="next" href="#slide_3">＞</a>
+									<a class="prev" href="#slide_1">＜</a>
+									<img src="./images/index/slide02.jpg" alt="" width="1500" height="600" decoding="async">
+								</li>
+								<li class="slide" id="slide_3">
+									<a class="next" href="#slide_4">＞</a>
+									<a class="prev" href="#slide_2">＜</a>
+									<img src="./images/index/slide03.jpg" alt="" width="1500" height="600" decoding="async">
+								</li>
+								<li class="slide" id="slide_4">
+									<a class="next" href="#slide_1">＞</a>
+									<a class="prev" href="#slide_3">＜</a>
+									<img src="./images/index/slide04.jpg" alt="" width="1500" height="600" decoding="async">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<nav aria-label="スライダーナビゲーション" class="control">
+					<ul class="nav">
+						<li class="next">＞</li>
+						<li class="prev">＜</li>
+					</ul>
+					<ul class="dp__flex pager">
+						<li><a href="#slide_1">1</a></li>
+						<li><a href="#slide_2">2</a></li>
+						<li><a href="#slide_3">3</a></li>
+						<li><a href="#slide_4">4</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+
+		<section id="news" class="sec02">
+			<div class="sec__in__l">
+				<h2 class="fs__txt__en__40">NEWS</h2>
+				<ul>
+					<li><a href="#">
+						<div class="photo">
+							<figure><img src="./images/index/article01.jpg" alt="花瓶" width="285" height="200" decoding="async"></figure>
+						</div>
+						<time datetime="0001-01-01">0001-01-01</time>
+						<div class="tit">
+							<h3 class="fs__txt__18">No.js</h3>
+						</div>
+						<div class="txt">
+							<p class="fs__txt__14">このサイトはjavascriptを一切使用していません。<br>
+							また、inputなども使用していません。<br>
+							HTMLとCSSで複雑なレイアウト、スライダー、ホバーアニメーション、アコーディオンをフルスクラッチで実装しています。<br>
+							google fontsのみ使用。<br>
+							スライダーは傾きを使ってホイールスクロールで移動できるようにしています。<br>
+							NEWSはgrid、subgridを使用したレイアウトです。<br>
+							ABOUTのホバーアニメーションは、The CPU Hackとコンテナクエリを使って位置保存を実装しています。<br>
+							※スタイルクエリでは反映されない。<br>
+							アコーディオンとモーダルはdetailsをボタンとして動かしています。<br>
+							高さの問題はgridで解決しています。<br>
+							今後実装されるかもしれない「CSS Anchor Positioning」と「Scroll-driven Animations」は期待。</p>
+						</div>
+						<div class="more">
+							<p class="fs__txt__14">続きを読む</p>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="photo">
+							<figure><img src="./images/index/article02.jpg" alt="ベッド" width="285" height="200" decoding="async"></figure>
+						</div>
+						<time datetime="0001-01-01">0001-01-01</time>
+						<div class="tit">
+							<h3 class="fs__txt__18">タイトルタイトル</h3>
+						</div>
+						<div class="txt">
+							<p class="fs__txt__14">テキストテキストテキストテキスト</p>
+						</div>
+						<div class="more">
+							<p class="fs__txt__14">続きを読む</p>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="photo">
+							<figure><img src="./images/index/article03.jpg" alt="ソファ" width="285" height="200" decoding="async"></figure>
+						</div>
+						<time datetime="0001-01-01">0001-01-01</time>
+						<div class="tit">
+							<h3 class="fs__txt__18">タイトルタイトル</h3>
+						</div>
+						<div class="txt">
+							<p class="fs__txt__14">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						</div>
+						<div class="more">
+							<p class="fs__txt__14">続きを読む</p>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="photo">
+							<figure><img src="./images/index/article04.jpg" alt="ソファ" width="285" height="200" decoding="async"></figure>
+						</div>
+						<time datetime="0001-01-01">0001-01-01</time>
+						<div class="tit">
+							<h3 class="fs__txt__18">タイトルタイトル</h3>
+						</div>
+						<div class="txt">
+							<p class="fs__txt__14">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						</div>
+						<div class="more">
+							<p class="fs__txt__14">続きを読む</p>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="photo">
+							<figure><img src="./images/index/article05.jpg" alt="猫" width="285" height="200" decoding="async"></figure>
+						</div>
+						<time datetime="0001-01-01">0001-01-01</time>
+						<div class="tit">
+							<h3 class="fs__txt__18">タイトルタイトル</h3>
+						</div>
+						<div class="txt">
+							<p class="fs__txt__14">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						</div>
+						<div class="more">
+							<p class="fs__txt__14">続きを読む</p>
+						</div>
+					</a></li>
+				</ul>
+				<p class="btn"><a href="#">NEWS一覧</a></p>
+			</div>
+		</section>
+
+		<section id="about" class="sec03">
+			<div class="sec__in__l">
+				<h2 class="fs__txt__en__40">ABOUT</h2>
+				<div class="save__wrap">
+					<div class="save">
+						<div class="save__ele save__ele__child1">area1
+							<div class="save__flow__1">save flow1</div>
+							<div class="save__flow__2">save flow2</div>
+							<div class="save__flow__3">save flow3</div>
+							<div class="save__flow__4">save flow4</div>
+						</div>
+						<div class="save__ele save__ele__child2">area2
+							<div class="save__flow__1">save flow1</div>
+							<div class="save__flow__2">save flow2</div>
+							<div class="save__flow__3">save flow3</div>
+							<div class="save__flow__4">save flow4</div>
+						</div>
+						<div class="save__ele save__ele__child3">area3
+							<div class="save__flow__1">save flow1</div>
+							<div class="save__flow__2">save flow2</div>
+							<div class="save__flow__3">save flow3</div>
+							<div class="save__flow__4">save flow4</div>
+						</div>
+						<div class="save__ele save__ele__child4">area4
+							<div class="save__flow__1">save flow1</div>
+							<div class="save__flow__2">save flow2</div>
+							<div class="save__flow__3">save flow3</div>
+							<div class="save__flow__4">save flow4</div>
+						</div>
+						<div class="save__move">MOVE</div>
+					</div>
+					<ul class="dp__flex">
+						<li>
+							<dl>
+								<dt>ポイント１</dt>
+								<dd>本来ならホバーを外した時点で、初期位置に戻ることになりますが、animateを使ったThe CPU Hackで変数を保存して最後の位置から動かないようになっています。</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>ポイント２</dt>
+								<dd>本来ならホバーを外した時点で、初期位置に戻ることになりますが、animateを使ったThe CPU Hackで変数を保存して最後の位置から動かないようになっています。</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>ポイント３</dt>
+								<dd>本来ならホバーを外した時点で、初期位置に戻ることになりますが、animateを使ったThe CPU Hackで変数を保存して最後の位置から動かないようになっています。</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>ポイント４</dt>
+								<dd>本来ならホバーを外した時点で、初期位置に戻ることになりますが、animateを使ったThe CPU Hackで変数を保存して最後の位置から動かないようになっています。</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<div class="table">
+					<h3>概要</h3>
+					<ul>
+						<li>
+							<dl class="dp__flex">
+								<dt class="fw__bold">会社名</dt>
+								<dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="dp__flex">
+								<dt class="fw__bold">項目</dt>
+								<dd>内容</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="dp__flex">
+								<dt class="fw__bold">項目</dt>
+								<dd>内容</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="dp__flex">
+								<dt class="fw__bold">項目</dt>
+								<dd>内容</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="access" class="sec04">
+			<div class="sec__in__l">
+				<h2 class="fs__txt__en__40">ACCESS</h2>
+				<dl>
+					<dt class="img__reset"><img src="./images/index/map.jpg" alt="access map" width="1140" height="451" decoding="async"></dt>
+					<dd>
+						<p class="txt">テキストテキストテキストテキストテキスト</p>
+						<p class="btn"><a href="#">Google Map</a></p>
+					</dd>
+				</dl>
+			</div>
+		</section>
+
+		<section id="faq" class="sec05">
+			<div class="sec__in__l">
+				<h2 class="fs__txt__en__40">FAQ</h2>
+				<ul>
+					<li>
+						<div class="acodion">
+							<div class="button">
+								<details>
+									<summary><span>クエスチョンＡ</span></summary>
+								</details>
+							</div>
+							<div class="content">
+								<div class="in">
+									<div class="txt">
+										<p>detailsを使ったopen属性でクリック判定してアコーディオンを実装しています。<br>
+										高さの変動は基本的にheight、max-heightなどを利用してjsで制御しないと難しいですが、gridのアニメーションが実装されたことでjsを使わずにアコーディオンの動きが可能になりました。<br>
+										ただし、見出しはあるのにコンテンツがないようなマークアップになるので、ふさわしくない可能性があります。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="acodion">
+							<div class="button">
+								<details>
+									<summary><span>クエスチョンＢ</span></summary>
+								</details>
+							</div>
+							<div class="content">
+								<div class="in">
+									<div class="txt">
+										<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+										テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="acodion">
+							<div class="button">
+								<details>
+									<summary><span>クエスチョンＣ</span></summary>
+								</details>
+							</div>
+							<div class="content">
+								<div class="in">
+									<div class="txt">
+										<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="contact" class="sec06">
+			<div class="sec__in__l">
+				<h2 class="fs__txt__en__40">CONTACT</h2>
+				<p>WEBフォームをクリックするとモーダルウィンドウが開きます。</p>
+				<dl>
+					<dt class="fs__txt__18 fw__bold">お問い合わせ</dt>
+					<dd>
+						<ul class="dp__flex">
+							<li>
+								<div class="modal__wrap">
+									<div class="modal">
+										<div class="modal__inner">
+											<div class="button">
+												<details>
+													<summary><span>WEBフォーム</span></summary>
+												</details>
+											</div>
+											<div class="content">
+												<div class="in">detailsのopen属性を使ったモーダルウィンドウです。<br>
+												トグルを利用するために、detailsをfixedでモーダルにして、ボタンが有った箇所にクローンを表示させています。</div>
+											</div>
+										</div>
+									</div>
+									<div class="clone">
+										<div class="button">お問い合せはこちらから</div>
+									</div>
+								</div>
+							</li>
+							<li class="tel"><a href="tel:000-0000-0000">TEL：000-0000-0000</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</section>
+
+	</div>
+</main>
+
+
+<footer>
+	<div class="sec__in__l">
+		<div class="dp__flex">
+			<div class="cpy">
+				<h3>（仮）株式会社 No.js</h3>
+				<dl class="dp__flex">
+					<dt>SOCIAL：</dt>
+					<dd>
+						<ul class="dp__flex img__reset">
+							<li><a href="#"><img src="./images/sns_x.svg" alt="X" width="20" height="20" decoding="async"></a></li>
+							<li><a href="#"><img src="./images/sns_fb.svg" alt="Facebook" width="20" height="20" decoding="async"></a></li>
+							<li><a href="#"><img src="./images/sns_insta.svg" alt="Instagram" width="20" height="20" decoding="async"></a></li>
+							<li><a href="#"><img src="./images/sns_yt.svg" alt="Youtube" width="20" height="20" decoding="async"></a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			<div class="snav">
+				<nav aria-label="サブメニュー">
+					<ul clasS="dp__flex">
+						<li>このサイトについて</li>
+						<li>プライバシーポリシー</li>
+					</ul>
+				</nav>
+				<p>&copy; （仮）No.js</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
